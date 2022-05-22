@@ -1,0 +1,30 @@
+import java.util.*;
+public class hashingset {
+    public static void main(String args[]){
+    Set<Integer> firstnumber=new HashSet<>();
+    firstnumber.add(10);
+    firstnumber.add(20);
+    firstnumber.add(30);
+    firstnumber.add(40);
+    firstnumber.add(50);
+    firstnumber.add(60);
+    firstnumber.add(60);
+    firstnumber.add(60);
+    firstnumber.add(60);
+    firstnumber.add(60);
+    firstnumber.add(60);
+    firstnumber.add(60);
+    firstnumber.add(60);
+    firstnumber.add(60);
+    firstnumber.add(60);
+  Set<Integer> second=new HashSet<>(firstnumber); 
+  List<Integer>third= new ArrayList<>(second);
+  System.out.println(third);
+       if(firstnumber.contains(50)){
+         System.out.println("present");
+       }
+       else{
+         System.out.println("not present");
+       }
+}
+}
